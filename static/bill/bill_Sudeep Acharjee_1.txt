@@ -1,0 +1,9 @@
+Sudeep-Develops
+
+Customer ID: 1
+Name: Sudeep Acharjee
+Address: Barpete Road
+GST Percentage: 12
+Items:
+  - Book: 5000
+  - Copy: 2000

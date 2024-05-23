@@ -1,0 +1,8 @@
+Sudeep-Develops
+
+Customer ID: 1
+Name: Sudeep Acharjee1
+Address: Barpeta Road
+GST Percentage: 23
+Items:
+  - MAcbook2: 2000000

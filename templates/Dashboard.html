@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
+        @media (max-width: 400px) {
+            body {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            table {
+                font-size: 11px;
+            }
+            th, td {
+                padding: 4px;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Bill Dashboard</h1>
+    <table>
+        <tr>
+            <th>Date and Time</th>
+            <th>Bill File</th>
+        </tr>
+        {% for bill in bills %}
+        <tr>
+            <td>{{ bill[0].strftime('%Y-%m-%d %H:%M:%S') }}</td>
+            <td><a href="{{ url_for('static', filename='bill/' + bill[1]) }}" target="_blank">{{ bill[1] }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
