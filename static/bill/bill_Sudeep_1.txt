@@ -1,0 +1,8 @@
+Sudeep-Develops
+
+Customer ID: 1
+Name: Sudeep
+Address: dj
+GST Percentage: 1
+Items:
+  - iphone: 2000000

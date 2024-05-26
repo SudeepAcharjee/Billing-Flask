@@ -2,8 +2,11 @@ Sudeep-Develops
 
 Customer ID: 1
 Name: Sudeep Acharjee
-Address: Barpete Road
-GST Percentage: 12
+Address: Guwahti,Assam
+GST Percentage: 20
 Items:
-  - Book: 5000
-  - Copy: 2000
+  - Macbook: 90000
+  - Monitor: 10000
+  - Keyboard&Mouse: 3000
+  - Type C hub: 6000
+  - SSD 1TB: 3000
